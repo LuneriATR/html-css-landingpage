@@ -95,7 +95,6 @@ header{
 
 #cafés{
     margin-top: 70px;
-    padding: 0 220px;
     display: flex;
     justify-content: center;
     flex-direction:column;
@@ -104,6 +103,13 @@ header{
     display: flex;
     justify-content: center;
     text-align: center;
+    }
+
+    #bg-coffee-stains{
+        transform: scale(1.1);
+        position: absolute;
+        padding-left: 80px;
+        
     }
 
     h1{
@@ -127,8 +133,17 @@ header{
             height: 470px;
             margin: 70px;
             border-radius: 30px;
-            background-image: linear-gradient(#f6c7c5, #c27d7a);
             color: white;
+
+            &#capuccino{
+                background-image: linear-gradient(#f6c7c5, #c27d7a);
+            }
+            &#ao-leite{
+                background-image: linear-gradient(to bottom left, #FAFAFA, #541511 160%);
+            }
+            &#preto{
+                background-image: linear-gradient(#0A0909, #541511);
+            }
 
             h1{
                 font-size: 16px;
