@@ -94,6 +94,89 @@ header{
 }
 
 #cafés{
+
+    background-image: url"(assets\bg-coffee-stains.png)";
+    background-size: contain;
+    background-repeat: no-repeat;
+
+/*VERSÃO DO PROFESSOR:
+    #cafés{
+        border: 1px solid red;
+        & .textos{
+        color: #3C0E0E;
+        display: flex;
+        justify-content: center;
+        flex-position: column;
+            & h2{
+                font-size: 40px;
+                font-weight: 600;
+            }
+            & .detalhe{
+            width: 65px;
+            height: 1px;
+            background-color: #3C0E0E;
+            margin-bottom: 30px;
+            }
+            & p{
+                width: 540px;
+                margin-bottom: 30px;
+            }
+        }
+
+        & .grade{
+            display: grid;
+            grid-templete-columns: repeat(3, 1fr);
+            gap: 70px
+            padding: 0 110px;
+            margin-top: 60px;
+            text-align: center;
+        }
+        
+        & div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: #ffffff;
+            border-radius:50px;
+            padding: 25px 30px;
+
+            &.café1{
+                background color copiado do figma;
+            }
+
+            &.café2{
+                background color copiado do figma;
+            }
+            
+            &.café3{
+                background color copiado do figma;
+            }
+            & h3{
+                font-size: 32px;
+                margin-bottom: 10px;
+            }
+            & h2{
+                font-size: 20;
+                margin-bottom;
+            a{
+                display: block;
+                background-color: white;
+                liine-height: 46px;
+                width: 100%;
+                border-radius: 25px;
+                text-align: center;
+                color: black;
+                font-weight: bold;
+                margin-top: 30px;
+                box-shadow: 0 8px 7px #00000025;
+            }
+
+    }
+    
+
+
+*/
+
     margin-top: 70px;
     display: flex;
     justify-content: center;
@@ -105,12 +188,7 @@ header{
     text-align: center;
     }
 
-    #bg-coffee-stains{
-        transform: scale(1.1);
-        position: absolute;
-        padding-left: 80px;
-        
-    }
+    
 
     h1{
         font-weight: 600;
@@ -163,16 +241,6 @@ header{
         }
     }
     
-    button{
-        margin-top: 20px;
-        border: none;
-        background-color: white;
-        padding: 16px;
-        width: 300px;
-        font-weight: bold;
-        font-size: 16px;
-        border-radius: 30px;
-    }
 }
 
 #croissants{

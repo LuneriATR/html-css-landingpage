@@ -1,3 +1,9 @@
 Link do Figma do professor: https://www.figma.com/design/lszzn35oka11VrsLkVPxDe/-Mini-Projeto--Meow-Caf%C3%A9-Design--Community-?node-id=105-643&t=efMx3WfNne66LCVl-0
 
 Tarefa de cassa: concluir a sessão do café e a sessão do croassant.
+
+git reset <hash do commit anterior> --hard //Voltar na branch anterior
+
+dispaly: flex, sem mencionar justify content, o flex direction é row; Ou seja, o justify content é na horizontal e o align items é na vertical.
+
+flexbox frog e grid garden.
