@@ -1,20 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     font-family: "Poppins", sans-serif;
 }
 
-form{
-    /* Quando inseri os elementos abaixo, o retangulo ficou à esquerda.
-    height: 100vh;
-    width: 400px;
-    background-color: #3C0E0E;
-    */
-    color:#3C0E0E;
+form {
+    color: #3C0E0E;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -22,11 +17,12 @@ form{
     padding: 30px;
 }
 
-body{
+body {
     background-color: #F7F2E8;
+    position: relative;
 }
 
-header{
+header {
     display: flex;
     justify-content: space-between;
     padding-left: 220px;
@@ -40,24 +36,24 @@ header{
 
     /*AGRUPAMENTO DE SELETORES: SO AFETA AS DIV DENTRO DESSE HEADER*/
 
-    & div{
+    & div {
         display: flex;
         align-items: center;
 
-        & a{
+        & a {
             margin-left: 30px;
             font-size: 20px;
             color: #3C0E0E;
             font-weight: 500px;
             transition-duration: 0.1s;
 
-            &:hover{
-            border-bottom: 5px solid #3C0E0E;
+            &:hover {
+                border-bottom: 5px solid #3C0E0E;
             }
 
-            &.btn{
-                background-color:#3C0E0E;
-                color:white;
+            &.btn {
+                background-color: #3C0E0E;
+                color: white;
                 padding: 5px 26px 0 26px;
                 border-radius: 30px;
             }
@@ -65,219 +61,234 @@ header{
     }
 }
 
-#topo{
+#topo {
     padding: 0 220px;
     display: flex;
     justify-content: space-between;
 
-    & div:first-child{
+    & div:first-child {
         padding-left: 30px;
         padding-top: 160px;
         color: #3C0E0E;
-    
-        & h1{
+
+        & h1 {
             font-size: 24px;
             margin-bottom: 8px;
         }
-        & h2{
+
+        & h2 {
             font-size: 80px;
             line-height: 84px;
             margin-bottom: 20px;
         }
 
-        p{
+        p {
             width: 350px;
         }
 
-    }   
+    }
 
 }
 
-#cafés{
+#cafés {
 
-    background-image: url"(assets\bg-coffee-stains.png)";
+    background-image: url("assets\cafe-bg.png");
     background-size: contain;
     background-repeat: no-repeat;
 
-/*VERSÃO DO PROFESSOR:
-    #cafés{
-        border: 1px solid red;
-        & .textos{
+    & .apresentacao-cafés {
         color: #3C0E0E;
         display: flex;
-        justify-content: center;
-        flex-position: column;
-            & h2{
-                font-size: 40px;
-                font-weight: 600;
-            }
-            & .detalhe{
+        flex-direction: column;
+        align-items: center;
+
+        & h1 {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        & p {
+            width: 540px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .detalhe {
             width: 65px;
             height: 1px;
             background-color: #3C0E0E;
-            margin-bottom: 30px;
-            }
-            & p{
-                width: 540px;
-                margin-bottom: 30px;
-            }
+            margin-bottom: 15px;
         }
+    }
 
-        & .grade{
-            display: grid;
-            grid-templete-columns: repeat(3, 1fr);
-            gap: 70px
-            padding: 0 110px;
-            margin-top: 60px;
-            text-align: center;
-        }
-        
-        & div{
+    .grade {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 70px;
+        padding: 0 330px 0 330px;       
+        margin-top: 60px;
+        text-align: center;
+        justify-self: center;
+
+        & div {
             display: flex;
             flex-direction: column;
             align-items: center;
             color: #ffffff;
-            border-radius:50px;
+            border-radius: 50px;
             padding: 25px 30px;
+            height: 470px;  
+            width:330px;
 
-            &.café1{
-                background color copiado do figma;
+            &.capuccino {
+                background-image: linear-gradient(to bottom left,#F6C7C5, #C27D7A);
             }
 
-            &.café2{
-                background color copiado do figma;
+            &.leite {
+                background-image: linear-gradient(to bottom left, #FAFAFA, #541511 150%);
             }
-            
-            &.café3{
-                background color copiado do figma;
+
+            &.preto {
+                background-image: linear-gradient(to bottom left, #0A0909, #541511);
             }
-            & h3{
-                font-size: 32px;
+
+            & h1 {
+                font-size: 20px;
+                font-weight: normal;
+            }
+
+            & h2 {
                 margin-bottom: 10px;
             }
-            & h2{
-                font-size: 20;
-                margin-bottom;
-            a{
+            & p {
+                width: 300px;
+                font-weight: normal;
+            }
+
+            & a {
                 display: block;
                 background-color: white;
-                liine-height: 46px;
+                line-height: 46px;
                 width: 100%;
                 border-radius: 25px;
                 text-align: center;
-                color: black;
+                color: black;                
                 font-weight: bold;
                 margin-top: 30px;
                 box-shadow: 0 8px 7px #00000025;
             }
-
-    }
-    
-
-
-*/
-
-    margin-top: 70px;
-    display: flex;
-    justify-content: center;
-    flex-direction:column;
-
-    .alinhamento{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    }
-
-    
-
-    h1{
-        font-weight: 600;
-    }
-
-    p{
-        width: 550;
-    }
-    
-    ul{
-        list-style-type: none;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-        
-
-        & li{
-            width: 325px;
-            height: 470px;
-            margin: 70px;
-            border-radius: 30px;
-            color: white;
-
-            &#capuccino{
-                background-image: linear-gradient(#f6c7c5, #c27d7a);
-            }
-            &#ao-leite{
-                background-image: linear-gradient(to bottom left, #FAFAFA, #541511 160%);
-            }
-            &#preto{
-                background-image: linear-gradient(#0A0909, #541511);
-            }
-
-            h1{
-                font-size: 16px;
-            }
-
-            h2{
-                font-size: 36px;
-                font-weight: normal;
-            }
-
-            p{
-                padding: 5px;
-            }
-
-            
-            
         }
     }
-    
 }
 
-#croissants{
+
+
+#croissants {
     margin-top: 70px;
     display: flex;
     justify-content: center;
     flex-direction: space-between;
-    
-    & div{
+    margin-bottom: 70px;
+
+    & div {
         padding-right: 270px;
     }
 
-    h1{
+    h1 {
         font-size: 16px;
         background-color: white;
-        color:#f6c7c5;
+        color: #f6c7c5;
         border-radius: 30px;
         text-align: center;
         width: 80px;
     }
 
-    h2{
+    h2 {
         font-size: 80px;
-        font-weight: 700;
-        color:#3C0E0E;
+        color: black;
+        color: #3C0E0E;
     }
 
-    h3{
+    h3 {
         font-weight: normal;
         font-size: 40px;
         margin-bottom: 15px;
-        color:#3C0E0E
+        color: #3C0E0E
     }
 
-    p{
+    p {
         width: 300px;
-        color:#3C0E0E
+        color: #3C0E0E
+    }
+
+}
+
+#delivery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    width: 1115px;
+    height: 370px;
+    background-image: linear-gradient(#F3C7C4, #541511F2);
+    color: white;
+    padding-right: 30px;
+    text-align: right;
+    border-radius: 50px;
+
+    img{
+        margin-top: -100px;
+    }
+
+    & h1{
+        font-size: 40px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    & a{
+        width: 280px;
+        line-height: 50px;
+        font-weight: bold;
+        background-color: white;
+        color: black;
+        border-radius: 25px;
+        display: inline-block;
+        text-align:center;
+        margin-top: 30px;
+        box-shadow: 0 8px 7px #00000025;
+    }
+
+}
+#localizacao{
+    
+    width: 1115px;
+    margin: 0 auto;
+    border-radius: 50px;
+    color: white;
+    display: flex;
+    background-image: linear-gradient(#541511A8, #F3C7C4);
+    padding-left: 40px;
+    position: relative;
+
+        .left{
+        
+            & h1{
+                font-size: 80px;
+                line-height: 84px;
+        }
+
+        .detalhe{
+            width: 50px;
+            height: 1px;
+            background-color: white;
+        }
+        & img{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translateX(-50%) translateY(-50%);
+        }
     }
 
 }

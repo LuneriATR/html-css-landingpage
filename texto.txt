@@ -7,3 +7,7 @@ git reset <hash do commit anterior> --hard //Voltar na branch anterior
 dispaly: flex, sem mencionar justify content, o flex direction é row; Ou seja, o justify content é na horizontal e o align items é na vertical.
 
 flexbox frog e grid garden.
+
+hierarquia: id > classe > tag
+
+aria labels servem aos leitores de tela.
