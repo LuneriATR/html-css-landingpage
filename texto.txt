@@ -11,3 +11,6 @@ flexbox frog e grid garden.
 hierarquia: id > classe > tag
 
 aria labels servem aos leitores de tela.
+
+background: linear-gradient(202.65deg, #541511 4.72%, #F3C7C4 102.83%);
+

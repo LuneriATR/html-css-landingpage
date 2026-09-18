@@ -19,7 +19,6 @@ form {
 
 body {
     background-color: #F7F2E8;
-    position: relative;
 }
 
 header {
@@ -45,10 +44,11 @@ header {
             font-size: 20px;
             color: #3C0E0E;
             font-weight: 500px;
-            transition-duration: 0.1s;
+            border-bottom: 5px solid transparent; /*desabilita o detalhe em delivery*/
+            transition-duration: 0.2s;
 
             &:hover {
-                border-bottom: 5px solid #3C0E0E;
+                border-bottom: 5px solid #3C0E0E; /*habilita o detalhe*/
             }
 
             &.btn {
@@ -67,7 +67,7 @@ header {
     justify-content: space-between;
 
     & div:first-child {
-        padding-left: 30px;
+        padding-left: 40px;
         padding-top: 160px;
         color: #3C0E0E;
 
@@ -92,10 +92,11 @@ header {
 
 #cafés {
 
-    background-image: url("assets\cafe-bg.png");
+    background-image: url("./assets/cafe-bg.png"); /*PONTO BARRA, DAÍ APARECE A PASTA.*/
     background-size: contain;
     background-repeat: no-repeat;
 
+    /*Outras partes aqui foram alteradas em relação a versão do professor. Na versão dele, a grid expande o tamanho para preencher a tela.*/
     & .apresentacao-cafés {
         color: #3C0E0E;
         display: flex;
@@ -125,10 +126,10 @@ header {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 70px;
-        padding: 0 330px 0 330px;       
+        padding: 0 330px 0 330px; /*vp: 0 110px*/
         margin-top: 60px;
         text-align: center;
-        justify-self: center;
+        justify-self: center; /*professor não usa justify-self*/
 
         & div {
             display: flex;
@@ -137,7 +138,7 @@ header {
             color: #ffffff;
             border-radius: 50px;
             padding: 25px 30px;
-            height: 470px;  
+            height: 470px; /*professor não usa height e width, ele ajusta o tamanho do bloco com o espaçamento do texto. */
             width:330px;
 
             &.capuccino {
@@ -230,7 +231,7 @@ header {
     margin: 0 auto;
     width: 1115px;
     height: 370px;
-    background-image: linear-gradient(#F3C7C4, #541511F2);
+    background-image: linear-gradient(#F3C7C4, #541511);
     color: white;
     padding-right: 30px;
     text-align: right;
@@ -260,6 +261,27 @@ header {
     }
 
 }
+
+#sobre{
+    margin-top: 70px;
+    margin-bottom: 70px;
+    display: flex;
+    justify-items: space-between;
+    margin: 0 500px;
+
+    & div:first-child{
+        h1{
+            font-size: 20px;
+            font-weight: 500;
+        }
+        h2{
+            font-weight: 700px;
+            font-size: 48px;
+        }
+    }
+
+}
+
 #localizacao{
     
     width: 1115px;
@@ -267,28 +289,115 @@ header {
     border-radius: 50px;
     color: white;
     display: flex;
-    background-image: linear-gradient(#541511A8, #F3C7C4);
+    justify-content: space-between;
+    background-image: linear-gradient(200deg,#541511A8 5%, #F3C7C4 100%);
     padding-left: 40px;
     position: relative;
 
-        .left{
+       
         
-            & h1{
-                font-size: 80px;
-                line-height: 84px;
+    & h1{
+        font-size: 80px;
+        line-height: 84px;
+        margin-top: 55px;
+    }
+
+    .detalhe{
+        width: 50px;
+        height: 1px;
+        background-color: white;
+    }
+
+    & h2{
+        font-size: 20px;
+        font-weight: 500;
+        margin: 16px 0;
+    }
+
+    & p{
+        width: 300px;
+        margin-bottom: 40px;
+    }
+
+    & a{
+        font-weight: bold;
+        color:#3C0E0E;
+        margin-bottom: 55px;
+        display: block;
+    }
+
+    & img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+    }
+
+    & div:nth-child(3){
+        width: 370px;
+        background-image: linear-gradient(200deg,#8f423d 5%, #ffffff 100%);
+        padding: 0 34px;
+        border-radius: 0 48px 48px 0;
+        & h1{
+            font-size: 40px;
+        }
+        & .detalhe{
+        width: 100%;
+        margin-bottom: 26px;
+    }
+    & .endereço{
+        display: flex;
+        align-items: center;
+        
+        & box-icon{
+            width: 60px;
+            height: 40px;
+            fill: white;
         }
 
-        .detalhe{
-            width: 50px;
-            height: 1px;
-            background-color: white;
+        & p{
+            margin-bottom: 0;
         }
-        & img{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-50%);
+    }
+    }
+    
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 400px;
+    margin-top: 170px;
+    margin-bottom: 170px;
+    
+    
+    & div:first-child{
+        width: 300px;
+    }
+
+    ul{
+        list-style-type: none;
+        display: flex;
+    }
+
+    ol{
+        list-style-type: none;
+    }
+
+    li{
+        color:#541511;
+
+        & box-icon{
+            color:#541511;
         }
     }
 
+    h1{
+        font-weight: 500;
+        font-size: 20px;
+    }
+
+    p{
+        color: #541511;
+    }
 }
